@@ -1,0 +1,10 @@
+git init -->> initializes repository in our folder 
+created repo is of .git expansion and is hidden 
+
+git status -->> it shows current status of working directory files that are not staged(who's history is not being tracked), untracked  files etc.
+git add. file_name -->> used to add the file to repository to keep track of history of files
+
+cat file_name-->> can display content of your file
+
+
+
