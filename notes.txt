@@ -10,6 +10,8 @@ git add file_name -->> this command stages a specific file, preparing it to be a
 git add. -->> this command stages all changes in the current directory and sub directory adding them to staging area 
               this is way of staging the file for next commit we need to stage file every time we want to commit the change 
 
+git commit -m "message to be attached" : this command shall commit a change to current working directory to our locally created repo
+
 cat file_name-->> can display content of your file
 
 git restore --staged file_name -->> this command removes specifed filed from staging area effectively unstaging it changes shall remain in directory but wont show on
@@ -17,7 +19,7 @@ next commit
 git log -->> this command displays all the commits made in the current working directory 
 
 
-git reset  3c5974f276e33afe5062ed4128ee1048cfb2b694 -->> this command unstages all the commits made after the mentioned hash id however changes made to working directory
+git reset <hash id> -->> this command unstages all the commits made after the mentioned hash id however changes made to working directory
                                                          shall remain as it is
 
 git stash -->> this command saves your uncommitted changes (both staged and unstaged) into a stack-like storage, allowing you to work on something else without 
@@ -29,3 +31,6 @@ git stash clear -->> this will clear all the data stored in our stash
 
 git remote add origin <link> --> this command links your local Git repository to a remote repository on GitHub
 git push origin main -->> this commands pushes your project to remote GitHub repository
+origin is the name typically given to main remote repository but you can name it anything
+
+git branch -->> this command  shows a list of all the branches in your local/ remote repository and highlights the current branch with an asterisk (*).
