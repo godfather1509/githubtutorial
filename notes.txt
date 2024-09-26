@@ -23,4 +23,9 @@ git reset  3c5974f276e33afe5062ed4128ee1048cfb2b694 -->> this command unstages a
 git stash -->> this command saves your uncommitted changes (both staged and unstaged) into a stack-like storage, allowing you to work on something else without 
                losing your progress, this shall also remove the un comiited changes from current working directory and store evrything in stash 
 
-git pop -->> this will bring data back from stash to working directory 
+git stash pop -->> this will bring data back from stash to working directory 
+
+git stash clear -->> this will clear all the data stored in our stash 
+
+git remote add origin <link> --> this command links your local Git repository to a remote repository on GitHub
+git push origin main -->> this commands pushes your project to remote GitHub repository
