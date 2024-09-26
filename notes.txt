@@ -1,12 +1,26 @@
-git init -->> initializes repository in our folder 
-created repo is of .git expansion and is hidden 
+commit: A commit records the state of the project’s files at the moment the commit is made. It includes all staged changes in the working directory.
+staging area: In Git, the staging area (also known as the index) is an intermediate space where you can prepare changes before committing them to the repository.
+
+git init -->> initializes repository in our folder it will track the changes made to our file 
+              created repo is of .git expansion and is hidden 
 
 git status -->> it shows current status of working directory files that are not staged(who's history is not being tracked), untracked  files etc.
 
-git add. file_name -->> used to add the file to repository to keep track of history of files
-git add. -->> this will add all un tracked files to the repo
+git add file_name -->> this command stages a specific file, preparing it to be added in next commit 
+git add. -->> this command stages all changes in the current directory and sub directory adding them to staging area 
+              this is way of staging the file for next commit we need to stage file every time we want to commit the change 
 
 cat file_name-->> can display content of your file
 
+git restore --staged file_name -->> this command removes specifed filed from staging area effectively unstaging it changes shall remain in directory but wont show on
+next commit 
+git log -->> this command displays all the commits made in the current working directory 
 
 
+git reset  3c5974f276e33afe5062ed4128ee1048cfb2b694 -->> this command unstages all the commits made after the mentioned hash id however changes made to working directory
+                                                         shall remain as it is
+
+git stash -->> this command saves your uncommitted changes (both staged and unstaged) into a stack-like storage, allowing you to work on something else without 
+               losing your progress, this shall also remove the un comiited changes from current working directory and store evrything in stash 
+
+git pop -->> this will bring data back from stash to working directory 
