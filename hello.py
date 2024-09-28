@@ -10,4 +10,3 @@ b=int(input("Enter 2nd number:"))
 print(a+b)
 print("Hello This is Git and GitHub tutorial")
 print(fibonnaci(a))
-

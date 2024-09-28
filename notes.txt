@@ -2,13 +2,13 @@ commit: A commit records the state of the project’s files at the moment the co
 staging area: In Git, the staging area (also known as the index) is an intermediate space where you can prepare changes before committing them to the repository.
 
 git init -->> initializes repository in our folder it will track the changes made to our file 
-              created repo is of .git expansion and is hidden 
+created repo is of .git expansion and is hidden 
 
 git status -->> it shows current status of working directory files that are not staged(who's history is not being tracked), untracked  files etc.
 
 git add file_name -->> this command stages a specific file, preparing it to be added in next commit 
 git add. -->> this command stages all changes in the current directory and sub directory adding them to staging area 
-              this is way of staging the file for next commit we need to stage file every time we want to commit the change 
+this is way of staging the file for next commit we need to stage file every time we want to commit the change 
 
 git commit -m "message to be attached" : this command shall commit a change to current working directory to our locally created repo
 
@@ -20,10 +20,10 @@ git log -->> this command displays all the commits made in the current working d
 
 
 git reset <hash id> -->> this command unstages all the commits made after the mentioned hash id however changes made to working directory
-                        shall remain as it is
+shall remain as it is
 
 git stash -->> this command saves your uncommitted changes (both staged and unstaged) into a stack-like storage, allowing you to work on something else without 
-               losing your progress, this shall also remove the un comiited changes from current working directory and store evrything in stash 
+losing your progress, this shall also remove the un comiited changes from current working directory and store evrything in stash 
 
 git stash pop -->> this will bring data back from stash to working directory 
 
@@ -31,6 +31,29 @@ git stash clear -->> this will clear all the data stored in our stash
 
 git remote add origin <link> --> this command links your local Git repository to a remote repository on GitHub
 git push origin main -->> this commands pushes your project to remote GitHub repository
-origin is the name typically given to main remote repository but you can name it anything
+note: origin is the name typically given to main remote repository but you can name it anything
 
-git branch -->> this command  shows a list of all the branches in your local/ remote repository and highlights the current branch with an asterisk (*).
+git remote -v -->> this command gives all the links associate with our repository
+
+git push origin main --force -->> this command overwrites the remote branch with the state of the local branch
+this command is requierd when we make changes to commit history on our local repo and want those changes to reflect in remote 
+repository as well if commit history of local and remote  repositories do not match we won't be able to push our local changes to remote repo
+note: should be used with caution because it will overwrite the remote branch, which may affect others who are working on the same branch(another option is to 
+merge the changes).
+
+git branch -->> this command  shows a list of all the branches in your local/remote repository and highlights the current branch with an asterisk (*).
+
+In github person creating the repository(owner of repo) only has power to make any changes to repository if someone wants to contribute any change he/she will have to 
+create a fork in his/her own account and make changes and then submit a pull request to propose their changes
+
+git clone <repo link> -->> this will create a clone of your github repo link on your local storage
+
+The upstream URL in GitHub refers to the URL of the original repository from which a fork was created. When you fork a repository and clone it to your local machine, 
+the cloned repository only points to your fork. To keep your fork up-to-date with the original repository, you need to add the original repository (upstream) as a remote.
+
+git branch <branch name>-->> this command is used to create a new branch to along side our main branch or whatever branch you're currently on.
+git checkout <branch name> -->> This command switches your working directory to the branch you specify. It moves the HEAD to point to that branch.
+git switch <branch name> -->> this serves same purpose as that of checkout
+now when we make commits we shall be making under the new branch 
+changes comitted under new branch shall be displayed only when HEAD in that branch if we switch the branch changes won'tbe reflected in switched branch 
+
