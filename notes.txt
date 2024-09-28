@@ -55,6 +55,6 @@ git branch <branch name> -->> this command is used to create a new branch to alo
 git checkout <branch name> -->> This command switches your working directory to the branch you specify. It moves the HEAD to point to that branch.
 git switch <branch name> -->> this serves same purpose as that of checkout
 now when we make commits we shall be making under the new branch 
-changes comitted under new branch shall be displayed only when HEAD in that branch if we switch the branch changes won'tbe reflected in switched branch 
+changes comitted under new branch shall be displayed only when HEAD in that branch if we switch the branch changes won't be reflected in switched branch 
 
 Open Pull Request: When a pull request is open, it means the request is active and awaiting review. The repository maintainers or collaborators haven't yet accepted (merge pull request) or rejected (close pull request) the proposed changes. During this time, feedback can be given, code can be reviewed, and the author can continue making additional changes to the PR if necessary.
