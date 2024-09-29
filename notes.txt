@@ -51,9 +51,10 @@ git clone <repo link> -->> this will create a clone of your github repo link on 
 The upstream URL in GitHub refers to the URL of the original repository from which a fork was created. When you fork a repository and clone it to your local machine, 
 the cloned repository only points to your fork. To keep your fork up-to-date with the original repository, you need to add the original repository (upstream) as a remote.
 
-git branch <branch name>-->> this command is used to create a new branch to along side our main branch or whatever branch you're currently on.
+git branch <branch name> -->> this command is used to create a new branch to along side our main branch or whatever branch you're currently on.
 git checkout <branch name> -->> This command switches your working directory to the branch you specify. It moves the HEAD to point to that branch.
 git switch <branch name> -->> this serves same purpose as that of checkout
 now when we make commits we shall be making under the new branch 
-changes comitted under new branch shall be displayed only when HEAD in that branch if we switch the branch changes won'tbe reflected in switched branch 
+changes comitted under new branch shall be displayed only when HEAD in that branch if we switch the branch changes won't be reflected in switched branch 
 
+Open Pull Request: When a pull request is open, it means the request is active and awaiting review. The repository maintainers or collaborators haven't yet accepted (merge pull request) or rejected (close pull request) the proposed changes. During this time, feedback can be given, code can be reviewed, and the author can continue making additional changes to the PR if necessary.
