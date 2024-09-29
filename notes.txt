@@ -51,3 +51,7 @@ now when we make commits we shall be making under the new branch
 changes comitted under new branch shall be displayed only when HEAD in that branch if we switch the branch changes won't be reflected in switched branch 
 
 Open Pull Request: When a pull request is open, it means the request is active and awaiting review. The repository maintainers or collaborators haven't yet accepted (merge pull request) or rejected (close pull request) the proposed changes. During this time, feedback can be given, code can be reviewed, and the author can continue making additional changes to the PR if necessary.
+
+git rebase -i <hash id> -->> this command can be used to merge/squash multiple commits in one commit
+
+A merge conflict occurs in Git when two people make changes to the same line in a file or when one person edits a file while another person deletes it. Git can't automatically decide which change to keep, so it flags the conflict and requires manual resolution.
