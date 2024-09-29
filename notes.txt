@@ -36,17 +36,13 @@ note: origin is the name typically given to main remote repository but you can n
 git remote -v -->> this command gives all the links associate with our repository
 
 git push origin main --force -->> this command overwrites the remote branch with the state of the local branch
+
 this command is requierd when we make changes to commit history on our local repo and want those changes to reflect in remote 
 repository as well if commit history of local and remote  repositories do not match we won't be able to push our local changes to remote repo
 note: should be used with caution because it will overwrite the remote branch, which may affect others who are working on the same branch(another option is to 
 merge the changes).
 
 git branch -->> this command  shows a list of all the branches in your local/remote repository and highlights the current branch with an asterisk (*).
-
-In github person creating the repository(owner of repo) only has power to make any changes to repository if someone wants to contribute any change he/she will have to 
-create a fork in his/her own account and make changes and then submit a pull request to propose their changes
-
-git clone <repo link> -->> this will create a clone of your github repo link on your local storage
 
 The upstream URL in GitHub refers to the URL of the original repository from which a fork was created. When you fork a repository and clone it to your local machine, 
 the cloned repository only points to your fork. To keep your fork up-to-date with the original repository, you need to add the original repository (upstream) as a remote.
