@@ -1,0 +1,16 @@
+This is notes for fork created of projects 
+
+In github person creating the repository(owner of repo) only has power to make any changes to repository if someone wants to contribute any change he/she will have to create a fork in his/her own account and make changes and then submit a pull request to propose their changes
+
+git clone <repo link> -->> this will create a clone of your github repo link on your local storage
+
+The upstream URL in GitHub refers to the URL of the original repository from which a fork was created. When you fork a repository and clone it to your local machine, 
+the cloned repository only points to your fork. To keep your fork up-to-date with the original repository, you need to add the original repository (upstream) as a remote.
+
+we cannot push our code to upstream url from fork we push it 1st to our forked repo from there we create a pull request to original repo 
+
+we push fork as branch to original repository, where it is reviewed and merged with main branch
+
+git fetch upstream -->> this command will fetch the updates in original repo and store it in background waiting to be updated in local storage 
+git merge upstream/main -->> this command will update main branch of fork repo with latest changes in original repository
+
