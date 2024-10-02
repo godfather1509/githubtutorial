@@ -1,6 +1,8 @@
 commit: A commit records the state of the project’s files at the moment the commit is made. It includes all staged changes in the working directory.
 staging area: In Git, the staging area (also known as the index) is an intermediate space where you can prepare changes before committing them to the repository.
 
+in version control softwares folders are called as repositories 
+
 git init -->> initializes repository in our folder it will track the changes made to our file 
 created repo is of .git expansion and is hidden 
 
@@ -55,3 +57,14 @@ Open Pull Request: When a pull request is open, it means the request is active a
 git rebase -i <hash id> -->> this command can be used to merge/squash multiple commits in one commit
 
 A merge conflict occurs in Git when two people make changes to the same line in a file or when one person edits a file while another person deletes it. Git can't automatically decide which change to keep, so it flags the conflict and requires manual resolution.
+
+when remote repository contains some files that are not present in local storage we use 'pull' command to bring such files to local storage
+before executing pull commnad we need to configure the system to accept the changes and create commits for that by default 
+'git config pull.rebase false' is executed 
+
+git pull origin main -->> this command will pull the changes from remote repository to our local repo 
+
+git merge <new branch name> -->> this command will merge new branch to main branch in local repo
+
+ 
+
