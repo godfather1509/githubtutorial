@@ -66,5 +66,5 @@ git pull origin main -->> this command will pull the changes from remote reposit
 
 git merge <new branch name> -->> this command will merge new branch to main branch in local repo
 
- 
+git branch -M main -->> this changes the name of branch 
 
